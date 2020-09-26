@@ -86,20 +86,20 @@ function appendListItem(list, text) {
 function registerFormulaInput(sock) {
 	var formulaInputElement = document.getElementById('formulaInput');
 	formulaInputElement.addEventListener("keydown", function(e) {
-    	// if Enter key is pressed
-    	if (e.keyCode === 13) {
-    	    e.preventDefault();
-    	    // evaluate formula
-    	    var formula = e.target.value;
-    	    try {
+		// if Enter key is pressed
+		if (e.keyCode === 13) {
+			e.preventDefault();
+			// evaluate formula
+			var formula = e.target.value;
+			try {
 				var equation = formula + ' = ' + math.eval(formula);
 				// send message to server
 				sock.send(equation);
 			} catch(exception) {
 				alert( exception.message );
 			}
-    	    // reset the form
-    	    e.target.value = '';
-    	}
-    });
+			// reset the form
+			e.target.value = '';
+		}
+	});
 }
