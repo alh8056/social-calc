@@ -1,9 +1,10 @@
 # social-calc
 
-Demonstrates the use of WebSockets to provide a chat-like functionality.
+Demo: http://sandbox.321software.net/social-calc/
 
-socketServer.php - the WebSocket server.
+Toy program that demonstrates the use of WebSockets to provide a chat-like functionality.
 
-im.js - the WebSocket client.
+* socketServer.php - the WebSocket server.
+* im.js - the WebSocket client.
 
-Uses Ratchet for WebSockets and math.js for safe evaluation of mathematical expressions.
+Depends on Ratchet for WebSockets and math.js for safe evaluation of mathematical expressions.
