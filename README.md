@@ -2,7 +2,7 @@
 
 Demo: http://sandbox.321software.net/social-calc/
 
-Toy program that demonstrates the use of WebSockets to provide a chat-like functionality.
+Toy program that demonstrates the use of WebSockets to provide a chat-like functionality. Try it on your phone and PC at the same time!
 
 * socketServer.php - the WebSocket server.
 * im.js - the WebSocket client.
