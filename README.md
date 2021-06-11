@@ -4,7 +4,6 @@ Demo: http://sandbox.321software.net/social-calc/ - Try it on your phone and PC 
 
 Toy program that demonstrates the use of WebSockets to provide a chat-like functionality.
 
-Key Files:
 * MessageHandler.php - WebSocket back-end.
 * im.js - WebSocket front-end.
 
