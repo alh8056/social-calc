@@ -10,7 +10,7 @@
 window.onload = (event) => {
 	// register callbacks to events
 	var sock = createSocket(
-		'ws://phpserver.321software.net:8080/',
+		'ws://' + window.location.hostname + ':8080/',
 		logMessages
 	);
 	registerFormulaInput(sock);
@@ -31,6 +31,7 @@ window.onload = (event) => {
  * @param    onMessageCallback    The function to run whenever a message is received.
  */
 function createSocket(uri, onMessageCallback) {
+	console.log(uri);
 	var sock = new WebSocket(uri);
 	sock.onmessage = onMessageCallback;
 	return sock;
@@ -92,7 +93,7 @@ function registerFormulaInput(sock) {
 			// evaluate formula
 			var formula = e.target.value;
 			try {
-				var equation = formula + ' = ' + math.eval(formula);
+				var equation = formula + ' = ' + math.evaluate(formula);
 				// send message to server
 				sock.send(equation);
 			} catch(exception) {
