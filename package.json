@@ -1,15 +1,5 @@
 {
-  "name": "sezzle-calc",
-  "version": "1.0.0",
-  "description": "",
-  "main": "im.js",
   "dependencies": {
-    "mathjs-expression-parser": "^1.0.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Angel Harbison",
-  "license": "ISC"
+    "mathjs": "^9.4.4"
+  }
 }
