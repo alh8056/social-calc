@@ -10,7 +10,7 @@
 window.onload = (event) => {
 	// register callbacks to events
 	var sock = createSocket(
-		'ws://' + window.location.hostname + ':8080/',
+		'wss://' + window.location.hostname + ':8080/',
 		logMessages
 	);
 	registerFormulaInput(sock);
